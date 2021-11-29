@@ -1,0 +1,6 @@
+framework module Pods_douxChat {
+  umbrella header "Pods-douxChat-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-douxchat-dev-181605-authRole",
+      "UnauthRoleArn": "arn:aws:iam::857782064031:role/amplify-douxchat-dev-181605-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::857782064031:role/amplify-douxchat-dev-181605-authRole",
+      "Region": "ap-northeast-2",
+      "DeploymentBucketName": "amplify-douxchat-dev-181605-deployment",
+      "UnauthRoleName": "amplify-douxchat-dev-181605-unauthRole",
+      "StackName": "amplify-douxchat-dev-181605",
+      "StackId": "arn:aws:cloudformation:ap-northeast-2:857782064031:stack/amplify-douxchat-dev-181605/fd39aae0-50f4-11ec-9666-0a5ecbc17478",
+      "AmplifyAppId": "d3xfvgstfodth"
+    }
+  }
+}

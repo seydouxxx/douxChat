@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1883893ADD2282CA064FEC5E /* Pods_douxChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA292B9DA6C5CEF440A494C9 /* Pods_douxChat.framework */; };
+		6E93ABEFC2B9A71744EF85E4 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F81C4FFC219F637CFD90FC62 /* amplifyconfiguration.json */; };
+		7E3356712754CD7400C29428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3356702754CD7400C29428 /* AppDelegate.swift */; };
+		7E3356732754CD7400C29428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3356722754CD7400C29428 /* SceneDelegate.swift */; };
+		7E3356782754CD7400C29428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3356762754CD7400C29428 /* Main.storyboard */; };
+		7E33567A2754CD7900C29428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E3356792754CD7900C29428 /* Assets.xcassets */; };
+		7E33567D2754CD7900C29428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E33567B2754CD7900C29428 /* LaunchScreen.storyboard */; };
+		7E3356882754CDFB00C29428 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3356872754CDFB00C29428 /* LoginViewController.swift */; };
+		7E33568B2754D34F00C29428 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 7E33568A2754D34F00C29428 /* AWSAPIPlugin */; };
+		7E33568D2754D34F00C29428 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 7E33568C2754D34F00C29428 /* AWSCognitoAuthPlugin */; };
+		7E33568F2754D34F00C29428 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 7E33568E2754D34F00C29428 /* AWSDataStorePlugin */; };
+		7E3356912754D34F00C29428 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3356902754D34F00C29428 /* Amplify */; };
+		963F0EC4CED0D64813F65C3B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 14AEE424482790476B0DEA49 /* awsconfiguration.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14AEE424482790476B0DEA49 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		582292FB9C809837DB9AB1F3 /* Pods-douxChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douxChat.release.xcconfig"; path = "Target Support Files/Pods-douxChat/Pods-douxChat.release.xcconfig"; sourceTree = "<group>"; };
+		7E33566D2754CD7400C29428 /* douxChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douxChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E3356702754CD7400C29428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E3356722754CD7400C29428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E3356772754CD7400C29428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E3356792754CD7900C29428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E33567C2754CD7900C29428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E33567E2754CD7900C29428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E3356872754CDFB00C29428 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BEA9D7E955A73BC8AAC8D155 /* Pods-douxChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douxChat.debug.xcconfig"; path = "Target Support Files/Pods-douxChat/Pods-douxChat.debug.xcconfig"; sourceTree = "<group>"; };
+		DA292B9DA6C5CEF440A494C9 /* Pods_douxChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douxChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F81C4FFC219F637CFD90FC62 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E33566A2754CD7400C29428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E33568B2754D34F00C29428 /* AWSAPIPlugin in Frameworks */,
+				7E3356912754D34F00C29428 /* Amplify in Frameworks */,
+				1883893ADD2282CA064FEC5E /* Pods_douxChat.framework in Frameworks */,
+				7E33568D2754D34F00C29428 /* AWSCognitoAuthPlugin in Frameworks */,
+				7E33568F2754D34F00C29428 /* AWSDataStorePlugin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E3356642754CD7400C29428 = {
+			isa = PBXGroup;
+			children = (
+				7E33566F2754CD7400C29428 /* douxChat */,
+				7E33566E2754CD7400C29428 /* Products */,
+				9D22CE1DFF3002DC7B8E6C55 /* Pods */,
+				D4CF401E00CEFC9128D193F1 /* Frameworks */,
+				E3AC3A6B4E55A87D0D088C5A /* AmplifyConfig */,
+			);
+			sourceTree = "<group>";
+		};
+		7E33566E2754CD7400C29428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E33566D2754CD7400C29428 /* douxChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E33566F2754CD7400C29428 /* douxChat */ = {
+			isa = PBXGroup;
+			children = (
+				7E3356862754CD9800C29428 /* Models */,
+				7E3356852754CD8F00C29428 /* Controllers */,
+				7E3356842754CD8800C29428 /* Views */,
+				7E3356702754CD7400C29428 /* AppDelegate.swift */,
+				7E3356722754CD7400C29428 /* SceneDelegate.swift */,
+				7E3356792754CD7900C29428 /* Assets.xcassets */,
+				7E33567E2754CD7900C29428 /* Info.plist */,
+			);
+			path = douxChat;
+			sourceTree = "<group>";
+		};
+		7E3356842754CD8800C29428 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7E3356762754CD7400C29428 /* Main.storyboard */,
+				7E33567B2754CD7900C29428 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E3356852754CD8F00C29428 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7E3356872754CDFB00C29428 /* LoginViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7E3356862754CD9800C29428 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9D22CE1DFF3002DC7B8E6C55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BEA9D7E955A73BC8AAC8D155 /* Pods-douxChat.debug.xcconfig */,
+				582292FB9C809837DB9AB1F3 /* Pods-douxChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D4CF401E00CEFC9128D193F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA292B9DA6C5CEF440A494C9 /* Pods_douxChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3AC3A6B4E55A87D0D088C5A /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				14AEE424482790476B0DEA49 /* awsconfiguration.json */,
+				F81C4FFC219F637CFD90FC62 /* amplifyconfiguration.json */,
+			);
+			name = AmplifyConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E33566C2754CD7400C29428 /* douxChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E3356812754CD7900C29428 /* Build configuration list for PBXNativeTarget "douxChat" */;
+			buildPhases = (
+				B89AC70993FD4DDCCE856AE3 /* [CP] Check Pods Manifest.lock */,
+				7E3356692754CD7400C29428 /* Sources */,
+				7E33566A2754CD7400C29428 /* Frameworks */,
+				7E33566B2754CD7400C29428 /* Resources */,
+				28F554B79AF822EEDD0DC0A0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = douxChat;
+			packageProductDependencies = (
+				7E33568A2754D34F00C29428 /* AWSAPIPlugin */,
+				7E33568C2754D34F00C29428 /* AWSCognitoAuthPlugin */,
+				7E33568E2754D34F00C29428 /* AWSDataStorePlugin */,
+				7E3356902754D34F00C29428 /* Amplify */,
+			);
+			productName = douxChat;
+			productReference = 7E33566D2754CD7400C29428 /* douxChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E3356652754CD7400C29428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					7E33566C2754CD7400C29428 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 7E3356682754CD7400C29428 /* Build configuration list for PBXProject "douxChat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E3356642754CD7400C29428;
+			packageReferences = (
+				7E3356892754D34F00C29428 /* XCRemoteSwiftPackageReference "amplify-ios" */,
+			);
+			productRefGroup = 7E33566E2754CD7400C29428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E33566C2754CD7400C29428 /* douxChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E33566B2754CD7400C29428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E33567D2754CD7900C29428 /* LaunchScreen.storyboard in Resources */,
+				7E33567A2754CD7900C29428 /* Assets.xcassets in Resources */,
+				7E3356782754CD7400C29428 /* Main.storyboard in Resources */,
+				963F0EC4CED0D64813F65C3B /* awsconfiguration.json in Resources */,
+				6E93ABEFC2B9A71744EF85E4 /* amplifyconfiguration.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28F554B79AF822EEDD0DC0A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-douxChat/Pods-douxChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-douxChat/Pods-douxChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-douxChat/Pods-douxChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B89AC70993FD4DDCCE856AE3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-douxChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E3356692754CD7400C29428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E3356882754CDFB00C29428 /* LoginViewController.swift in Sources */,
+				7E3356712754CD7400C29428 /* AppDelegate.swift in Sources */,
+				7E3356732754CD7400C29428 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E3356762754CD7400C29428 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E3356772754CD7400C29428 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E33567B2754CD7900C29428 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E33567C2754CD7900C29428 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E33567F2754CD7900C29428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E3356802754CD7900C29428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E3356822754CD7900C29428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEA9D7E955A73BC8AAC8D155 /* Pods-douxChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SCML36ZSLF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = douxChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seydouxxx.douxChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E3356832754CD7900C29428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 582292FB9C809837DB9AB1F3 /* Pods-douxChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SCML36ZSLF;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = douxChat/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seydouxxx.douxChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E3356682754CD7400C29428 /* Build configuration list for PBXProject "douxChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E33567F2754CD7900C29428 /* Debug */,
+				7E3356802754CD7900C29428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E3356812754CD7900C29428 /* Build configuration list for PBXNativeTarget "douxChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E3356822754CD7900C29428 /* Debug */,
+				7E3356832754CD7900C29428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E3356892754D34F00C29428 /* XCRemoteSwiftPackageReference "amplify-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E33568A2754D34F00C29428 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3356892754D34F00C29428 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSAPIPlugin;
+		};
+		7E33568C2754D34F00C29428 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3356892754D34F00C29428 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		7E33568E2754D34F00C29428 /* AWSDataStorePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3356892754D34F00C29428 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = AWSDataStorePlugin;
+		};
+		7E3356902754D34F00C29428 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E3356892754D34F00C29428 /* XCRemoteSwiftPackageReference "amplify-ios" */;
+			productName = Amplify;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7E3356652754CD7400C29428 /* Project object */;
+}
