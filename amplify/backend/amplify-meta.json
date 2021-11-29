@@ -11,5 +11,58 @@
       "StackId": "arn:aws:cloudformation:ap-northeast-2:857782064031:stack/amplify-douxchat-dev-181605/fd39aae0-50f4-11ec-9666-0a5ecbc17478",
       "AmplifyAppId": "d3xfvgstfodth"
     }
+  },
+  "auth": {
+    "douxChat": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [
+          "GOOGLE",
+          "APPLE"
+        ],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS",
+            "REQUIRES_UPPERCASE"
+          ]
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-douxchat-dev-181605-deployment/amplify-cfn-templates/auth/douxChat-cloudformation-template.json",
+        "logicalId": "authdouxChat"
+      },
+      "lastPushTimeStamp": "2021-11-29T11:04:03.102Z",
+      "output": {
+        "UserPoolId": "ap-northeast-2_tR0ZsZtfu",
+        "AppClientIDWeb": "17j8m61mjq1mc5i6fnq2aiftk7",
+        "AppClientID": "5kslgi68oi5r5m1iv8810edtel",
+        "HostedUIDomain": "e25oumaef33b-dev",
+        "IdentityPoolId": "ap-northeast-2:32da06a4-b614-4017-9c87-3f9221fdb2dc",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-2:857782064031:userpool/ap-northeast-2_tR0ZsZtfu",
+        "IdentityPoolName": "testAuthIdentityPool__dev",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"https://localhost:3000/\"],\"LogoutURLs\":[\"https://localhost:3000/\"]}",
+        "UserPoolName": "douxChat"
+      },
+      "lastPushDirHash": "J3GC7bytWUf7TeO+K4VWNR2K45s="
+    }
   }
 }

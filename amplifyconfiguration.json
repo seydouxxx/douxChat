@@ -1,4 +1,74 @@
 {
     "UserAgent": "aws-amplify-cli/2.0",
-    "Version": "1.0"
+    "Version": "1.0",
+    "auth": {
+        "plugins": {
+            "awsCognitoAuthPlugin": {
+                "UserAgent": "aws-amplify/cli",
+                "Version": "0.1.0",
+                "IdentityManager": {
+                    "Default": {}
+                },
+                "CredentialsProvider": {
+                    "CognitoIdentity": {
+                        "Default": {
+                            "PoolId": "ap-northeast-2:32da06a4-b614-4017-9c87-3f9221fdb2dc",
+                            "Region": "ap-northeast-2"
+                        }
+                    }
+                },
+                "CognitoUserPool": {
+                    "Default": {
+                        "PoolId": "ap-northeast-2_tR0ZsZtfu",
+                        "AppClientId": "5kslgi68oi5r5m1iv8810edtel",
+                        "Region": "ap-northeast-2"
+                    }
+                },
+                "Auth": {
+                    "Default": {
+                        "OAuth": {
+                            "WebDomain": "e25oumaef33b-dev.auth.ap-northeast-2.amazoncognito.com",
+                            "AppClientId": "5kslgi68oi5r5m1iv8810edtel",
+                            "SignInRedirectURI": "https://localhost:3000/",
+                            "SignOutRedirectURI": "https://localhost:3000/",
+                            "Scopes": [
+                                "phone",
+                                "email",
+                                "openid",
+                                "profile",
+                                "aws.cognito.signin.user.admin"
+                            ]
+                        },
+                        "authenticationFlowType": "USER_SRP_AUTH",
+                        "socialProviders": [
+                            "GOOGLE",
+                            "APPLE"
+                        ],
+                        "usernameAttributes": [
+                            "EMAIL"
+                        ],
+                        "signupAttributes": [
+                            "EMAIL"
+                        ],
+                        "passwordProtectionSettings": {
+                            "passwordPolicyMinLength": 8,
+                            "passwordPolicyCharacters": [
+                                "REQUIRES_LOWERCASE",
+                                "REQUIRES_NUMBERS",
+                                "REQUIRES_SYMBOLS",
+                                "REQUIRES_UPPERCASE"
+                            ]
+                        },
+                        "mfaConfiguration": "OFF",
+                        "mfaTypes": [
+                            "SMS"
+                        ],
+                        "verificationMechanisms": [
+                            "EMAIL"
+                        ]
+                    }
+                }
+            }
+        }
+    }
 }

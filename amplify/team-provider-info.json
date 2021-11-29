@@ -10,6 +10,12 @@
       "StackName": "amplify-douxchat-dev-181605",
       "StackId": "arn:aws:cloudformation:ap-northeast-2:857782064031:stack/amplify-douxchat-dev-181605/fd39aae0-50f4-11ec-9666-0a5ecbc17478",
       "AmplifyAppId": "d3xfvgstfodth"
+    },
+    "categories": {
+      "auth": {
+        "douxchatef26b113": {},
+        "douxChat": {}
+      }
     }
   }
 }
