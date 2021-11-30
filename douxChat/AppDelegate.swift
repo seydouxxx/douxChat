@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import GoogleSignIn
+import AWSMobileClientXCF
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let _ = AWS.initialize()
+        AWSMobileClient.default().initialize { userState, error in
+            if let error = error {
+                print("error: ", error)
+            }
+            if let userState = userState {
+                print("AWSMobileClient initialized: ", userState)
+            }
+        }
         return true
     }
 
@@ -33,4 +44,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

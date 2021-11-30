@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1883893ADD2282CA064FEC5E /* Pods_douxChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA292B9DA6C5CEF440A494C9 /* Pods_douxChat.framework */; };
 		6E93ABEFC2B9A71744EF85E4 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = F81C4FFC219F637CFD90FC62 /* amplifyconfiguration.json */; };
+		7E2E04292755F35700A25430 /* ChatSenderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E04272755F35700A25430 /* ChatSenderTableViewCell.swift */; };
+		7E2E042A2755F35700A25430 /* ChatSenderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2E04282755F35700A25430 /* ChatSenderTableViewCell.xib */; };
+		7E2E042D2755F37900A25430 /* ChatGetterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E042B2755F37900A25430 /* ChatGetterTableViewCell.swift */; };
+		7E2E042E2755F37900A25430 /* ChatGetterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2E042C2755F37900A25430 /* ChatGetterTableViewCell.xib */; };
 		7E3356712754CD7400C29428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3356702754CD7400C29428 /* AppDelegate.swift */; };
 		7E3356732754CD7400C29428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3356722754CD7400C29428 /* SceneDelegate.swift */; };
 		7E3356782754CD7400C29428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E3356762754CD7400C29428 /* Main.storyboard */; };
@@ -19,12 +23,19 @@
 		7E33568D2754D34F00C29428 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 7E33568C2754D34F00C29428 /* AWSCognitoAuthPlugin */; };
 		7E33568F2754D34F00C29428 /* AWSDataStorePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 7E33568E2754D34F00C29428 /* AWSDataStorePlugin */; };
 		7E3356912754D34F00C29428 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3356902754D34F00C29428 /* Amplify */; };
+		7E3356932754F99200C29428 /* AWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3356922754F99200C29428 /* AWS.swift */; };
+		7EA142922755044600DC800E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA142912755044600DC800E /* ChatViewController.swift */; };
+		7EA1429427550B5900DC800E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA1429327550B5900DC800E /* SignUpViewController.swift */; };
 		963F0EC4CED0D64813F65C3B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 14AEE424482790476B0DEA49 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14AEE424482790476B0DEA49 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		582292FB9C809837DB9AB1F3 /* Pods-douxChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douxChat.release.xcconfig"; path = "Target Support Files/Pods-douxChat/Pods-douxChat.release.xcconfig"; sourceTree = "<group>"; };
+		7E2E04272755F35700A25430 /* ChatSenderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSenderTableViewCell.swift; sourceTree = "<group>"; };
+		7E2E04282755F35700A25430 /* ChatSenderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatSenderTableViewCell.xib; sourceTree = "<group>"; };
+		7E2E042B2755F37900A25430 /* ChatGetterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGetterTableViewCell.swift; sourceTree = "<group>"; };
+		7E2E042C2755F37900A25430 /* ChatGetterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatGetterTableViewCell.xib; sourceTree = "<group>"; };
 		7E33566D2754CD7400C29428 /* douxChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douxChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E3356702754CD7400C29428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E3356722754CD7400C29428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +44,10 @@
 		7E33567C2754CD7900C29428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E33567E2754CD7900C29428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E3356872754CDFB00C29428 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7E3356922754F99200C29428 /* AWS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWS.swift; sourceTree = "<group>"; };
+		7EA142912755044600DC800E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		7EA1429327550B5900DC800E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7EA14295275551C600DC800E /* douxChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = douxChat.entitlements; sourceTree = "<group>"; };
 		BEA9D7E955A73BC8AAC8D155 /* Pods-douxChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douxChat.debug.xcconfig"; path = "Target Support Files/Pods-douxChat/Pods-douxChat.debug.xcconfig"; sourceTree = "<group>"; };
 		DA292B9DA6C5CEF440A494C9 /* Pods_douxChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douxChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F81C4FFC219F637CFD90FC62 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
@@ -76,6 +91,7 @@
 		7E33566F2754CD7400C29428 /* douxChat */ = {
 			isa = PBXGroup;
 			children = (
+				7EA14295275551C600DC800E /* douxChat.entitlements */,
 				7E3356862754CD9800C29428 /* Models */,
 				7E3356852754CD8F00C29428 /* Controllers */,
 				7E3356842754CD8800C29428 /* Views */,
@@ -83,6 +99,7 @@
 				7E3356722754CD7400C29428 /* SceneDelegate.swift */,
 				7E3356792754CD7900C29428 /* Assets.xcassets */,
 				7E33567E2754CD7900C29428 /* Info.plist */,
+				7E3356922754F99200C29428 /* AWS.swift */,
 			);
 			path = douxChat;
 			sourceTree = "<group>";
@@ -92,6 +109,10 @@
 			children = (
 				7E3356762754CD7400C29428 /* Main.storyboard */,
 				7E33567B2754CD7900C29428 /* LaunchScreen.storyboard */,
+				7E2E04272755F35700A25430 /* ChatSenderTableViewCell.swift */,
+				7E2E04282755F35700A25430 /* ChatSenderTableViewCell.xib */,
+				7E2E042B2755F37900A25430 /* ChatGetterTableViewCell.swift */,
+				7E2E042C2755F37900A25430 /* ChatGetterTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -100,6 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				7E3356872754CDFB00C29428 /* LoginViewController.swift */,
+				7EA142912755044600DC800E /* ChatViewController.swift */,
+				7EA1429327550B5900DC800E /* SignUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,8 +229,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E2E042A2755F35700A25430 /* ChatSenderTableViewCell.xib in Resources */,
 				7E33567D2754CD7900C29428 /* LaunchScreen.storyboard in Resources */,
 				7E33567A2754CD7900C29428 /* Assets.xcassets in Resources */,
+				7E2E042E2755F37900A25430 /* ChatGetterTableViewCell.xib in Resources */,
 				7E3356782754CD7400C29428 /* Main.storyboard in Resources */,
 				963F0EC4CED0D64813F65C3B /* awsconfiguration.json in Resources */,
 				6E93ABEFC2B9A71744EF85E4 /* amplifyconfiguration.json in Resources */,
@@ -263,9 +288,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EA1429427550B5900DC800E /* SignUpViewController.swift in Sources */,
+				7E2E04292755F35700A25430 /* ChatSenderTableViewCell.swift in Sources */,
 				7E3356882754CDFB00C29428 /* LoginViewController.swift in Sources */,
 				7E3356712754CD7400C29428 /* AppDelegate.swift in Sources */,
 				7E3356732754CD7400C29428 /* SceneDelegate.swift in Sources */,
+				7EA142922755044600DC800E /* ChatViewController.swift in Sources */,
+				7E2E042D2755F37900A25430 /* ChatGetterTableViewCell.swift in Sources */,
+				7E3356932754F99200C29428 /* AWS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = douxChat/douxChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SCML36ZSLF;
@@ -443,6 +474,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = douxChat/douxChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = SCML36ZSLF;
